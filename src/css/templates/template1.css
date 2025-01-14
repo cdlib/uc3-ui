@@ -1,0 +1,7 @@
+.image-test {
+  inline-size: 200px;
+  margin-inline: var(--uc3-space-sm);
+  padding: var(--uc3-space-base);
+  border: 1px solid var(--uc3-color-blue);
+  background-color: white;
+}

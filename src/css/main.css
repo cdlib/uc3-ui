@@ -1,0 +1,19 @@
+@import '../../node_modules/modern-normalize/modern-normalize.css';
+@import 'fonts.css';
+@import-glob './elements/*.css';
+@import-glob './components/*.css';
+@import-glob './templates/*.css';
+
+/* Global Variables */
+
+:root {
+  /* Spacing: */
+
+  --uc3-space-base: 1rem;
+  --uc3-space-sm: calc(var(--uc3-space-base) / 2);
+  --uc3-space-lg: calc(var(--uc3-space-base) * 2);
+
+  /* Colors in OKLCH using relative color syntax: */
+
+  --uc3-color-blue: oklch(from steelblue calc(l - 16%) c h);
+}

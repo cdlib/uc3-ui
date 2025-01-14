@@ -1,0 +1,37 @@
+{{#extend "tool"}}{{#content "body"}}
+
+<div class="tool-index">
+  <header>
+    <h1>UC3 UI Toolkit</h1>
+    <a href="https://github.com/cdlib/uc3-ui" target="_blank">GitHub Repository</a>
+  </header>
+  <aside>
+    <fieldset>
+      <legend>View Mode</legend>
+      <input id="view-preview" type="radio" name="view" value="preview">
+      <label for="view-preview">Preview</label>
+      <input id="view-fullpage" type="radio" name="view" value="fullpage">
+      <label for="view-fullpage">Full Page</label>
+    </fieldset>
+    <nav>
+      <h2>Templates</h2>
+      <ul>
+        <li><a href="src/templates/template.hbs">Test Template</a></li>
+      </ul>
+      <h2>Components</h2>
+      <ul>
+        <li><a href="src/components/component1-view.hbs">Test Component One</a></li>
+        <li><a href="src/components/component2-view.hbs">Test Component Two</a></li>
+      </ul>
+      <h2>Elements</h2>
+      <ul>
+        <li><a href="src/elements/element1-view.hbs">Test Element One</a></li>
+      </ul>
+    </nav>
+  </aside>
+  <main>
+    <iframe class="tool-preview" src="tool/preview.hbs" name="preview" frameborder="0"></iframe>
+  </main>
+</div>
+
+{{/content}}{{/extend}}

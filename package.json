@@ -3,7 +3,21 @@
   "version": "0.0.0",
   "description": "The user interface for the UC3 website",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "run-p parcel:dev watch:styles watch:js --silent",
+    "build": "run-s parcel:build lint:styles lint:js --silent",
+    "deploy": "run-s parcel:deploy lint:styles lint:js --silent",
+    "prestart": "del dist",
+    "prebuild": "del dist",
+    "predeploy": "del dist",
+    "parcel:dev": "parcel index.hbs --dist-dir dist",
+    "parcel:build": "parcel build src/css/main.css src/images/* src/js/main.js --dist-dir dist --no-source-maps --no-cache",
+    "parcel:deploy": "parcel build index.hbs --dist-dir dist --public-url https://cdlib.github.io/uc3-ui --no-source-maps --no-cache",
+    "watch:styles": "onchange -i 'src/css/**/*.css' -- npm run lint:styles",
+    "watch:js": "onchange -i src/js/* -- npm run lint:js",
+    "lint:styles": "stylelint 'src/css/**/*.css' '!src/css/main.css'",
+    "lint:js": "standard src/js/* --verbose | snazzy || exit 0",
+    "update-caniuse-lite": "npx update-browserslist-db@latest",
+    "format-js": "standard --fix"
   },
   "repository": {
     "type": "git",
@@ -14,5 +28,61 @@
   "bugs": {
     "url": "https://github.com/cdlib/uc3-ui/issues"
   },
-  "homepage": "https://github.com/cdlib/uc3-ui#readme"
+  "homepage": "https://github.com/cdlib/uc3-ui#readme",
+  "engines": {
+    "node": "~20",
+    "npm": "~10"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^9.3.0",
+    "@fortawesome/fontawesome-pro": "^6.7.2",
+    "@marcotss/parcel-transformer-handlebars-json": "^1.0.0",
+    "@parcel/optimizer-data-url": "^2.13.3",
+    "@parcel/resolver-glob": "^2.13.3",
+    "@parcel/transformer-inline-string": "^2.13.3",
+    "del-cli": "^6.0.0",
+    "modern-normalize": "^3.0.1",
+    "npm-run-all": "^4.1.5",
+    "onchange": "^7.1.0",
+    "parcel": "^2.13.3",
+    "postcss": "^8.5.1",
+    "postcss-import": "^16.1.0",
+    "postcss-import-ext-glob": "^2.1.1",
+    "snazzy": "^9.0.0",
+    "source-sans": "^3.46.0",
+    "standard": "^17.1.2",
+    "stylelint": "^16.12.0",
+    "stylelint-config-property-sort-order-smacss": "^10.0.0",
+    "stylelint-config-standard": "^36.0.1",
+    "svgo": "^3.3.2"
+  },
+  "alias": {
+    "fa-brands/*": "@fortawesome/fontawesome-pro/svgs/brands/$1",
+    "fa-light/*": "@fortawesome/fontawesome-pro/svgs/light/$1",
+    "fa-regular/*": "@fortawesome/fontawesome-pro/svgs/regular/$1",
+    "fa-sharp-solid/*": "@fortawesome/fontawesome-pro/svgs/sharp-solid/$1",
+    "fa-solid/*": "@fortawesome/fontawesome-pro/svgs/solid/$1",
+    "fa-thin/*": "@fortawesome/fontawesome-pro/svgs/thin/$1"
+  },
+  "browserslist": [
+    "defaults"
+  ],
+  "stylelint": {
+    "defaultSeverity": "warning",
+    "extends": [
+      "stylelint-config-standard",
+      "stylelint-config-property-sort-order-smacss"
+    ],
+    "rules": {
+      "import-notation": null,
+      "max-nesting-depth": 2,
+      "no-descending-specificity": null,
+      "selector-class-pattern": [
+        "^([a-z][a-z0-9]*)(-[a-z0-9]+)*((__([a-z][a-z0-9]*)(-[a-z0-9]+)*)?(--([a-z][a-z0-9]*)(-[a-z0-9]+)*)?)$",
+        {
+          "message": "Expected class pattern to be BEM style"
+        }
+      ]
+    }
+  }
 }
