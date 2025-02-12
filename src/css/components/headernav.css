@@ -1,0 +1,44 @@
+/* Header Navigation Component */
+
+.c-headernav {
+  container-type: inline-size;
+
+  ul {
+    display: grid;
+    gap: 0.9rem var(--uc3-space-base);
+    margin: unset;
+    padding: unset;
+    list-style: none;
+  }
+
+  a {
+    color: var(--uc3-color-blue);
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-variant-caps: small-caps;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+@container (width > 26rem) {
+  .c-headernav {
+    ul {
+      grid-auto-flow: column;
+      grid-template-rows: auto auto;
+    }
+  }
+}
+
+@container (width > 45rem) {
+  .c-headernav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  }
+}

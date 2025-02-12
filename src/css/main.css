@@ -15,5 +15,5 @@
 
   /* Colors in OKLCH using relative color syntax: */
 
-  --uc3-color-blue: oklch(from steelblue calc(l - 16%) c h);
+  --uc3-color-blue: oklch(from steelblue calc(l - 5%) c h);
 }
