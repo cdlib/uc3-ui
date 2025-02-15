@@ -1,0 +1,38 @@
+/* Header Component */
+
+.c-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: var(--uc3-space-base) var(--uc3-space-lg);
+  column-gap: var(--uc3-space-lg);
+  background-color: var(--uc3-color-blue);
+  color: white;
+
+  h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+.c-footer__main {
+  inline-size: 30rem;
+}
+
+.c-footer__more ul {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: auto auto auto;
+  gap: var(--uc3-space-sm) var(--uc3-space-base);
+  padding: unset;
+  list-style: none;
+  
+  a {
+    color: currentcolor;
+  }
+}
