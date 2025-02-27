@@ -1,0 +1,10 @@
+blockquote {
+  margin: unset;
+  padding: var(--uc3-space-lg);
+  background-color: var(--uc3-color-dark-blue);
+  color: white;
+
+  p:last-child {
+    margin-block-end: unset;
+  }
+}
