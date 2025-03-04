@@ -1,0 +1,14 @@
+/* Search Result Component */
+
+.c-search-result {
+  h2 {
+    margin-block-start: unset;
+    font-size: 1.3rem;
+    font-variant: normal;
+    font-weight: 600;
+  }
+
+  a {
+    color: var(--uc3-color-dark-blue);
+  }
+}
