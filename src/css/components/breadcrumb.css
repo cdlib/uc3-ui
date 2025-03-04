@@ -1,0 +1,35 @@
+/* Breadcrumb Component */
+
+.c-breadcrumb {
+  --icon-space: var(--uc3-space-sm);
+
+  ul {
+    all: unset;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--icon-space);
+  }
+
+  li {
+    display: flex;
+    gap: var(--icon-space);
+
+    &:not(:last-child)::after {
+      content: '';
+      flex: none;
+      inline-size: 1lh;
+      background-color: black;
+      mask: url('data-url:npm:fa-solid/angle-right.svg') center / contain no-repeat;
+    }
+  }
+
+  a {
+    color: var(--uc3-color-dark-blue);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

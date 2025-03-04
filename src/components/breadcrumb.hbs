@@ -1,0 +1,11 @@
+<nav class="c-breadcrumb" aria-label="breadcrumb">
+  <ul>
+  {{#each breadcrumb.text}}
+    {{#if (eq @key 2)}} {{!-- if the array item equals 2 (the last one) --}}
+    <li>{{this}}</li>
+    {{else}}
+    <li><a href="">{{this}}</a></li>
+    {{/if}}
+  {{/each}}
+  </ul>
+</nav>
