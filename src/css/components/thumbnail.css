@@ -1,0 +1,40 @@
+/* Thumbnail Component */
+
+.c-thumbnail > a {
+  display: flex;
+  flex-direction: column;
+  gap: var(--uc3-space-base);
+  text-decoration: none;
+
+  h2 {
+    order: 2;
+    margin: unset;
+    color: var(--uc3-color-dark-blue);
+  }
+
+  img {
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: top center;
+    background-color: gray;
+  }
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.c-thumbnail__posted {
+  margin-block: var(--uc3-space-sm) 0;
+
+  a {
+    color: var(--uc3-color-dark-blue);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
