@@ -1,0 +1,15 @@
+/* Ruled Heading Component */
+
+:is(h1, h2, h3, h4, h5, h6).c-ruled-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  &::after {
+    content: '';
+    flex: 1;
+    block-size: 0.06lh; /* rule height relative to line height */
+    margin-block-start: 0.2rem;
+    background-color: currentcolor;
+  }
+}
