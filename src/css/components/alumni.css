@@ -1,0 +1,17 @@
+/* Alumni Component */
+
+.c-alumni {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: var(--uc3-space-base);
+  margin-block: unset;
+
+  dt {
+    font-size: 1.2rem;
+    font-variant: small-caps;
+  }
+
+  dd {
+    margin-inline: unset;
+  }
+}
