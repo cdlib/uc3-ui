@@ -1,0 +1,8 @@
+/* Page Intro Component */
+
+.c-page-intro {
+  padding: var(--uc3-space-base);
+  color: var(--uc3-color-dark-blue);
+  line-height: 1.5;
+  backdrop-filter: blur(1rem);
+}
