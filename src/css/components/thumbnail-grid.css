@@ -1,0 +1,7 @@
+/* Thumbnail Grid Component */
+
+.c-thumbnail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: var(--uc3-space-lg) var(--uc3-space-base);
+}
