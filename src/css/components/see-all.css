@@ -1,0 +1,15 @@
+/* See All Component */
+
+.c-see-all {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  color: var(--uc3-color-blue);
+  font-size: 1.1rem;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}
