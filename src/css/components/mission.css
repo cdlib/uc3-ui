@@ -1,0 +1,45 @@
+/* Mission Component */
+
+.c-mission {
+  padding: clamp(var(--uc3-space-base), 8vw, 5rem);
+  padding-block-end: 10rem;
+  color: var(--uc3-color-dark-blue);
+  font-variant: small-caps;
+  text-align: center;
+}
+
+.c-mission header {
+  margin-block-end: var(--uc3-space-base);
+
+  p {
+    margin-block-start: unset;
+    margin-block-end: 4rem;
+    font-size: 1.4rem;
+  }
+
+  h2 {
+    margin-block: unset;
+    font-size: 1.8rem;
+    font-weight: 450;
+  }
+}
+
+.c-mission__content {
+  margin-block-end: 3rem;
+  font-size: 1.3rem;
+  text-align: left;
+
+  > :last-child {
+    margin-block-end: unset;
+  }
+}
+
+.c-mission__link {
+  color: currentcolor;
+  font-size: 1.1rem;
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
