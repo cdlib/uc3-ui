@@ -5,15 +5,15 @@
 
   ul {
     display: grid;
-    gap: 0.9rem var(--uc3-space-base);
+    gap: 0.7rem var(--uc3-space-base);
     margin: unset;
     padding: unset;
     list-style: none;
   }
 
   a {
-    color: var(--uc3-color-blue);
-    font-size: 1.1rem;
+    color: var(--uc3-color-dark-blue);
+    font-size: 1.2rem;
     text-decoration: none;
     font-variant-caps: small-caps;
 
@@ -24,7 +24,7 @@
   }
 }
 
-@container (width > 26rem) {
+@container (width > 15rem) {
   .c-headernav {
     ul {
       grid-auto-flow: column;
@@ -33,7 +33,7 @@
   }
 }
 
-@container (width > 45rem) {
+@container (width > 30rem) {
   .c-headernav {
     ul {
       display: flex;
