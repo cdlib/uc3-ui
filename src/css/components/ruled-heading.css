@@ -4,12 +4,14 @@
   display: flex;
   align-items: center;
   gap: 0.4rem;
+  margin-block: unset;
+  font-size: 2rem;
 
   &::after {
     content: '';
     flex: 1;
     block-size: 0.06lh; /* rule height relative to line height */
     margin-block-start: 0.2rem;
-    background-color: currentcolor;
+    background-color: var(--uc3-color-blue);
   }
 }
