@@ -43,3 +43,12 @@
     text-decoration: none;
   }
 }
+
+.c-mission header p,
+.c-mission header h2,
+.c-mission__content,
+.c-mission > a {
+  text-shadow:
+    0 0 0.5rem white,
+    0 0 0.5rem white;
+}
