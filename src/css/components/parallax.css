@@ -1,17 +1,17 @@
 /* Parallax Component */
 
 .c-parallax {
-  --image-height: 50vw;
+  --image-height: 65vw;
 
   height: 100vh;
-  perspective: 1px;
+  perspective: 3.5px;
 }
 
 .c-parallax__images {
   position: absolute;
   inset: 0;
   z-index: -1;
-  transform: translateZ(-1px) scale(2);
+  transform: translateZ(-1px) scale(1.3);
 
   img {
     width: 100%;
@@ -28,10 +28,7 @@
 }
 
 .c-parallax__content-window {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--image-height);
+  min-height: var(--image-height);
 }
 
 .c-parallax__content {
