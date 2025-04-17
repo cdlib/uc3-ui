@@ -1,0 +1,25 @@
+{{#extend "base"}}{{#content "body"}}
+<div class="t-home c-parallax">
+  <div class="c-parallax__images">
+    <img class="t-home__image-1" src="../images/lake-merritt.jpg" alt="">
+    <img class="t-home__image-2" src="../images/water-drop.jpg" loading="lazy">
+  </div>
+  <div class="t-home__content-window-1 c-parallax__content-window">
+    {{> header }}
+    {{> lead }}
+  </div>
+  <div class="t-home__content-1 c-parallax__content">
+    {{> portfolio }}
+  </div>
+  <div class="c-parallax__content-window">
+    {{> mission }}
+  </div>
+  <div class="t-home__content-2 c-parallax__content">
+    {{> ruled-heading }}
+    {{> thumbnail-grid }}
+    {{> see-all }}
+    {{> featured }}
+    {{> footer }}
+  </div>
+</div>
+{{/content}}{{/extend}}
