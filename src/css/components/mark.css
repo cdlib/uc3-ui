@@ -1,6 +1,6 @@
-/* Lead Component */
+/* Mark Component */
 
-.c-lead {
+.c-mark {
   display: grid;
   position: relative;
   grid-template-columns: auto 1fr;
@@ -40,7 +40,7 @@
 }
 
 @media (width > 42rem) {
-  .c-lead {
+  .c-mark {
     grid-template-columns: auto;
     justify-items: center;
     max-inline-size: 35rem;

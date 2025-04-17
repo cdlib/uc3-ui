@@ -32,7 +32,7 @@
   display: grid;
   grid-template-rows: auto 1fr;
 
-  .c-lead {
+  .c-mark {
     margin-inline: var(--uc3-space-lg);
     place-self: center;
   }
