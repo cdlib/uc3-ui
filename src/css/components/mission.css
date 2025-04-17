@@ -1,8 +1,8 @@
 /* Mission Component */
 
 .c-mission {
-  padding: clamp(var(--uc3-space-base), 8vw, 5rem);
-  padding-block-end: 10rem;
+  padding-block: 6vw var(--uc3-space-lg);
+  padding-inline: clamp(var(--uc3-space-lg), calc(25vw - 5rem), 15rem);
   color: var(--uc3-color-dark-blue);
   font-variant: small-caps;
   text-align: center;
@@ -14,7 +14,7 @@
   p {
     margin-block-start: unset;
     margin-block-end: 4rem;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
   }
 
   h2 {
