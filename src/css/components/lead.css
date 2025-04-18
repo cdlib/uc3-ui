@@ -1,0 +1,19 @@
+/* Lead Component */
+
+.c-lead {
+  color: var(--uc3-color-dark-blue);
+
+  h1 {
+    margin-block: unset;
+    margin-block-end: var(--uc3-space-base);
+  }
+
+  p {
+    max-inline-size: 25rem;
+    margin-block: unset;
+    padding: var(--uc3-space-base);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    backdrop-filter: blur(1rem);
+  }
+}
