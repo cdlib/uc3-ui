@@ -1,0 +1,17 @@
+/* Skip Navigation Component */
+
+.c-skip {
+  position: absolute;
+  inset-inline-start: -9999px;
+  z-index: 1;
+  padding: var(--uc3-space-sm);
+  transition: opacity .5s;
+  opacity: 0;
+  background-color: white;
+
+  &:focus {
+    inset-block-start: var(--uc3-space-base);
+    inset-inline-start: var(--uc3-space-base);
+    opacity: 1;
+  }
+}
