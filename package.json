@@ -30,7 +30,7 @@
   },
   "homepage": "https://github.com/cdlib/uc3-ui#readme",
   "engines": {
-    "node": "~20",
+    "node": "~22",
     "npm": "~10"
   },
   "devDependencies": {
