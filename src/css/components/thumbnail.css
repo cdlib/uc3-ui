@@ -6,7 +6,7 @@
   gap: var(--uc3-space-base);
   text-decoration: none;
 
-  h2 {
+  h3 {
     order: 2;
     margin: unset;
     color: var(--uc3-color-dark-blue);
