@@ -17,4 +17,8 @@
 
   --uc3-color-blue: oklch(from steelblue calc(l - 5%) c h);
   --uc3-color-dark-blue: oklch(from steelblue calc(l - 15%) c h);
+
+  /* Variables shared across templates */
+
+  --template-inline-content-padding: 10vw;
 }

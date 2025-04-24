@@ -1,0 +1,21 @@
+/* Secondary Template */
+
+.t-secondary__image-1 {
+  min-height: 30rem;
+  filter: contrast(20%) brightness(170%);
+}
+
+.t-secondary__content-window-1 {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  .c-lead {
+    align-self: center;
+    margin-inline: var(--template-inline-content-padding);
+  }
+}
+
+.t-secondary__content-1 {
+  padding-block: var(--uc3-space-base);
+  padding-inline: var(--template-inline-content-padding);
+}
