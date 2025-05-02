@@ -1,0 +1,22 @@
+/* Backdrop Utility */
+
+.u-backdrop {
+  --backdrop-filter: blur(1rem);
+  --backdrop-spread: 1rem;
+
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: var(--backdrop-filter);
+    mask-image:
+      linear-gradient(to top, transparent, black var(--backdrop-spread)),
+      linear-gradient(to right, transparent, black var(--backdrop-spread)),
+      linear-gradient(to bottom, transparent, black var(--backdrop-spread)),
+      linear-gradient(to left, transparent, black var(--backdrop-spread));
+    mask-composite: intersect;
+  }
+}
