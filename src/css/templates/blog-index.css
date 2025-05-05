@@ -1,0 +1,24 @@
+/* Blog Index Template */
+
+.t-blog-index__image-1 {
+  min-height: 30rem;
+  filter: contrast(20%) brightness(170%);
+}
+
+.t-blog-index__content-window-1 {
+  display: grid;
+  grid-template-rows: auto 1fr;
+
+  h1 {
+    place-self: center start;
+    margin-inline: var(--uc3-space-base);
+    padding: var(--uc3-space-base);
+  }
+}
+
+.t-blog-index__content-1 {
+  display: grid;
+  gap: var(--uc3-space-lg);
+  padding-block: var(--uc3-space-base) var(--uc3-space-lg);
+  padding-inline: var(--uc3-space-lg);
+}

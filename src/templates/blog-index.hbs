@@ -1,0 +1,16 @@
+{{#extend "base"}}{{#content "body"}}
+<div class="t-blog-index c-parallax">
+  <div class="c-parallax__images" role="presentation">
+    <img class="t-blog-index__image-1" src="{{ secondary.parallax_image }}" alt="">
+  </div>
+  <div class="t-blog-index__content-window-1 c-parallax__content-window">
+    {{> header }}
+    <h1 class="u-backdrop">Latest News</h1>
+  </div>
+  <main id="maincontent" class="t-blog-index__content-1 c-parallax__content">
+    {{> thumbnail-grid }}
+    {{> pagination }}
+  </main>
+  {{> footer }}
+</div>
+{{/content}}{{/extend}}
