@@ -5,6 +5,7 @@
   align-items: center;
   gap: 0.4rem;
   margin-block: unset;
+  font-variant: normal;
 
   &::after {
     content: '';
