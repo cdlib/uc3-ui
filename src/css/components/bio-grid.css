@@ -1,0 +1,7 @@
+/* Bio Grid Component */
+
+.c-bio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: var(--uc3-space-lg);
+}
