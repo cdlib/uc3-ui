@@ -1,28 +1,13 @@
 /* Header Component */
 
 .c-header {
+  --backdrop-spread: 2rem;
+
   display: grid;
-  position: relative;
   grid-template-columns: 5.1rem 1fr;
   align-items: start;
   padding: var(--uc3-space-lg);
   gap: var(--uc3-space-base);
-
-  /* Backdrop blur */
-
-  &::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    backdrop-filter: blur(1rem);
-    mask-image:
-      linear-gradient(to top, transparent, black 2rem),
-      linear-gradient(to right, transparent, black 2rem),
-      linear-gradient(to bottom, transparent, black 2rem),
-      linear-gradient(to left, transparent, black 2rem);
-    mask-composite: intersect;
-  }
 }
 
 .c-headernav {

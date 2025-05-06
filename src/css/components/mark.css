@@ -1,9 +1,11 @@
 /* Mark Component */
 
 .c-mark {
-  display: grid;
+  --backdrop-spread: 20%;
+
+  display: flex;
   position: relative;
-  grid-template-columns: auto 1fr;
+  flex-direction: row-reverse;
   align-items: center;
   gap: var(--uc3-space-sm);
   margin-block: unset;
@@ -11,41 +13,23 @@
   color: var(--uc3-color-dark-blue);
   font-variant: small-caps;
 
-  /* Icon */
-
-  &::before {
+  &::after {
     content: '';
+    flex: none;
     inline-size: 5rem;
     aspect-ratio: 1 / 1;
     background: url('../images/cupped-hands.svg') center / contain no-repeat;
-  }
-
-  /* Backdrop blur */
-
-  &::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    z-index: -1;
-    backdrop-filter: blur(1rem);
-    mask-image:
-      linear-gradient(to top, transparent, black 20%),
-      linear-gradient(to right, transparent, black 20%),
-      linear-gradient(to bottom, transparent, black 20%),
-      linear-gradient(to left, transparent, black 20%);
-    mask-composite: intersect;
   }
 }
 
 @media (width > 42rem) {
   .c-mark {
-    grid-template-columns: auto;
-    justify-items: center;
+    flex-direction: column-reverse;
     max-inline-size: 35rem;
-    padding: 2rem 6rem 3rem;
+    padding: 4rem;
     text-align: center;
 
-    &::before {
+    &::after {
       inline-size: 10rem;
     }
   }
