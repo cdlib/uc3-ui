@@ -2,8 +2,8 @@
 
 .c-alumni {
   display: grid;
-  grid-template-columns: auto auto;
-  gap: var(--uc3-space-base);
+  grid-template-columns: 1fr 1fr;
+  gap: var(--uc3-space-lg);
   margin-block: unset;
 
   dt {
