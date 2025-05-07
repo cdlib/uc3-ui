@@ -1,0 +1,9 @@
+/* Bios Template */
+
+.t-bios__content {
+  display: grid;
+  gap: var(--uc3-space-lg);
+  padding-block: var(--uc3-space-base) var(--uc3-space-lg);
+  padding-inline: var(--template-inline-content-padding);
+  container-type: inline-size;
+}
