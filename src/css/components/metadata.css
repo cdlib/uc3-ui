@@ -1,0 +1,15 @@
+/* Metadata Component */
+
+.c-metadata {
+  margin-block: var(--uc3-space-sm) 0;
+
+  a {
+    color: var(--uc3-color-dark-blue);
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

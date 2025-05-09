@@ -1,0 +1,11 @@
+<p class="c-metadata">
+  Posted in
+  {{#each metadata.data}}
+    {{!-- if the array item equals 2 (the last one) --}}
+    {{#if (eq @key 2)}}
+    and <a href="">{{this}}</a>
+    {{else}}
+    <a href="">{{this}}</a>,
+    {{/if}}
+  {{/each}}
+</p>
