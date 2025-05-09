@@ -3,14 +3,5 @@
     <h3>{{ thumbnail.title }}</h3>
     <img src="{{ thumbnail.image }}" loading="lazy" alt="">
   </a>
-  <p class="c-thumbnail__posted">
-    Posted in
-  {{#each thumbnail.posted}}
-    {{#if (eq @key 2)}} {{!-- if the array item equals 2 (the last one) --}}
-    and <a href="">{{this}}</a>
-    {{else}}
-    <a href="">{{this}}</a>,
-    {{/if}}
-  {{/each}}
-  </p>
+  {{> metadata }}
 </div>
