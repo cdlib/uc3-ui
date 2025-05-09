@@ -1,0 +1,13 @@
+{{#extend "base"}}{{#content "body"}}
+<div class="t-blog-post">
+  {{> header }}
+  <main id="maincontent" class="t-blog-post__content">
+    {{> post-header }}
+    <img src="{{ blogpost.image }}" alt="">
+    {{{ blogpost.paragraphs1 }}}
+    <h2>{{ blogpost.heading }}</h2>
+    {{{ blogpost.paragraphs2 }}}
+  </main>
+  {{> footer }}
+</div>
+{{/content}}{{/extend}}

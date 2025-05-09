@@ -1,0 +1,13 @@
+/* Blog Post Template */
+
+.t-blog-post__content {
+  padding-block: var(--uc3-space-base) var(--uc3-space-lg);
+  padding-inline: var(--template-inline-content-padding);
+
+  img {
+    display: block;
+    inline-size: 100%;
+    margin-block-end: var(--uc3-space-base);
+    background-color: gray;
+  }
+}
