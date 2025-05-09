@@ -1,0 +1,13 @@
+/* Post Header Component */
+
+.c-post-header {
+  margin-block-end: var(--uc3-space-base);
+
+  h1 {
+    margin-block: unset;
+  }
+
+  p {
+    margin-block: var(--uc3-space-sm) 0;
+  }
+}
