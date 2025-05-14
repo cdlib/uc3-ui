@@ -17,6 +17,7 @@
     &:not(:last-child)::after {
       content: '';
       flex: none;
+      block-size: 1lh;
       inline-size: 1lh;
       background-color: black;
       mask: url('data-url:npm:fa-solid/angle-right.svg') center / contain no-repeat;
