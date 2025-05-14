@@ -1,0 +1,29 @@
+/* Search Results Template */
+
+.t-search-results {
+  .c-breadcrumb {
+    margin-inline: var(--uc3-space-lg);
+  }
+
+  .c-search-result {
+    margin-block-end: var(--uc3-space-lg);
+  }
+}
+
+.t-search-results__header {
+  margin-block-end: var(--uc3-space-lg);
+
+  h1 {
+    margin-block: 0 var(--uc3-space-sm);
+    font-variant: normal;
+  }
+
+  p {
+    margin-block: unset;
+  }
+}
+
+.t-search-results__content {
+  padding-block: var(--uc3-space-lg);
+  padding-inline: var(--template-inline-content-padding);
+}

@@ -1,0 +1,17 @@
+{{#extend "base"}}{{#content "body"}}
+<div class="t-search-results">
+  {{> header }}
+  {{> breadcrumb search_results_breadcrumb }}
+  <main id="maincontent" class="t-search-results__content">
+    <div class="t-search-results__header">
+      <h1>Search Results</h1>
+      <p>Showing 1 - 10 of 200 results for "<strong>uc3</strong>"</p>
+    </div>
+    {{#each searchresults.items}}
+      {{> search-result }}
+    {{/each}}
+    {{> pagination }}
+  </main>
+  {{> footer }}
+</div>
+{{/content}}{{/extend}}
