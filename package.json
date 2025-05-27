@@ -37,14 +37,14 @@
     "@faker-js/faker": "^9.3.0",
     "@fortawesome/fontawesome-pro": "^6.7.2",
     "@marcotss/parcel-transformer-handlebars-json": "^1.0.0",
-    "@parcel/optimizer-data-url": "^2.13.3",
-    "@parcel/resolver-glob": "^2.13.3",
-    "@parcel/transformer-inline-string": "^2.13.3",
+    "@parcel/optimizer-data-url": "^2.15.2",
+    "@parcel/resolver-glob": "^2.15.2",
+    "@parcel/transformer-inline-string": "^2.15.2",
     "del-cli": "^6.0.0",
     "modern-normalize": "^3.0.1",
     "npm-run-all": "^4.1.5",
     "onchange": "^7.1.0",
-    "parcel": "^2.13.3",
+    "parcel": "^2.15.2",
     "postcss": "^8.5.1",
     "postcss-import": "^16.1.0",
     "postcss-import-ext-glob": "^2.1.1",
@@ -53,8 +53,7 @@
     "standard": "^17.1.2",
     "stylelint": "^16.12.0",
     "stylelint-config-property-sort-order-smacss": "^10.0.0",
-    "stylelint-config-standard": "^36.0.1",
-    "svgo": "^3.3.2"
+    "stylelint-config-standard": "^36.0.1"
   },
   "alias": {
     "fa-brands/*": "@fortawesome/fontawesome-pro/svgs/brands/$1",
