@@ -2,11 +2,6 @@
 
 .t-home__image-1 {
   min-height: 30rem;
-  filter: contrast(40%) brightness(160%);
-}
-
-.t-home__image-2 {
-  filter: contrast(70%) brightness(130%);
 }
 
 .t-home__content-1,
