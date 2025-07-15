@@ -11,12 +11,13 @@
   margin-block: unset;
   padding-block: 1rem;
   color: var(--uc3-color-dark-blue);
+  font-size: clamp(1.8rem, 3.5vw, 2.1rem);
   font-variant: small-caps;
 
   &::after {
     content: '';
     flex: none;
-    inline-size: 5rem;
+    inline-size: clamp(5rem, 14vw, 10rem);
     aspect-ratio: 1 / 1;
     background: url('../images/cupped-hands.svg') center / contain no-repeat;
   }
@@ -26,11 +27,7 @@
   .c-mark {
     flex-direction: column-reverse;
     max-inline-size: 35rem;
-    padding: 4rem;
+    padding: 0 4rem 4rem;
     text-align: center;
-
-    &::after {
-      inline-size: 10rem;
-    }
   }
 }
