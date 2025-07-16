@@ -1,33 +1,46 @@
 /* Mark Component */
 
 .c-mark {
-  --backdrop-spread: 20%;
+  --backdrop-spread: 0.5rem;
 
-  display: flex;
+  display: grid;
   position: relative;
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: var(--uc3-space-sm);
-  margin-block: unset;
-  padding-block: 1rem;
+  grid-template-columns: auto auto;
+  place-items: center;
+  gap: calc(var(--backdrop-spread) * 2);
+  margin-block: 0 calc(var(--backdrop-spread) * 2);
   color: var(--uc3-color-dark-blue);
   font-size: clamp(1.8rem, 3.5vw, 2.1rem);
   font-variant: small-caps;
 
-  &::after {
+  &::before {
     content: '';
-    flex: none;
     inline-size: clamp(5rem, 14vw, 10rem);
     aspect-ratio: 1 / 1;
     background: url('../images/cupped-hands.svg') center / contain no-repeat;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0 calc(var(--backdrop-spread) * -1);
+    z-index: -1;
+    grid-column: 2;
+    backdrop-filter: var(--text-backdrop-filter);
   }
 }
 
 @media (width > 42rem) {
   .c-mark {
-    flex-direction: column-reverse;
-    max-inline-size: 35rem;
-    padding: 0 4rem 4rem;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    max-inline-size: 25rem;
     text-align: center;
+
+    &::after {
+      inset: calc(var(--backdrop-spread) * -1);
+      grid-column: 1;
+      grid-row: 2;
+    }
   }
 }
