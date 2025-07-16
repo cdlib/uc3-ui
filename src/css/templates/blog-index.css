@@ -11,7 +11,7 @@
   h1 {
     place-self: center start;
     margin-inline: var(--uc3-space-base);
-    padding: var(--uc3-space-base);
+    padding: var(--uc3-space-sm) var(--uc3-space-base);
   }
 }
 
