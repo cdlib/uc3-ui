@@ -22,4 +22,5 @@
   /* Variables shared across templates */
 
   --template-inline-content-padding: 10vw;
+  --text-backdrop-filter: blur(1rem) contrast(40%) brightness(160%);
 }
