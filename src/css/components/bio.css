@@ -6,6 +6,10 @@
 }
 
 .c-bio header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+
   h2 {
     margin-block: unset;
     font-size: 1.4rem;
