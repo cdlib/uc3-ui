@@ -20,13 +20,5 @@ for (let i = 0; i < 10; i++) {
 }
 
 module.exports = {
-  items: list,
-  search_results_breadcrumb: {
-    breadcrumb: {
-      text: [
-        'University of California Curation Center (UC3)',
-        'Search Results for \"uc3\"'
-      ]
-    }
-  }
+  items: list
 }
