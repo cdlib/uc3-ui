@@ -1,0 +1,8 @@
+a {
+  color: var(--uc3-color-dark-blue);
+
+  &:focus,
+  &:hover {
+    text-decoration: none;
+  }
+}
