@@ -11,8 +11,4 @@
   p {
     margin-block: var(--uc3-space-sm);
   }
-
-  a {
-    color: var(--uc3-color-dark-blue);
-  }
 }
