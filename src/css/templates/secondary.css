@@ -10,6 +10,7 @@
 
   .c-lead {
     align-self: center;
+    margin-block-end: var(--uc3-space-lg);
     margin-inline: var(--template-inline-content-padding);
   }
 }
