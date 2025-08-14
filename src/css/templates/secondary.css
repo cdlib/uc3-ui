@@ -18,4 +18,9 @@
 .t-secondary__content-1 {
   padding-block: var(--uc3-space-base);
   padding-inline: var(--template-inline-content-padding);
+  font-size: var(--text-font-size);
+  
+  > :not(.c-breadcrumb, h2) {
+    line-height: var(--text-line-height);
+  }
 }

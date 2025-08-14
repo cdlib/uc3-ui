@@ -23,4 +23,6 @@
 
   --template-inline-content-padding: 10vw;
   --text-backdrop-filter: blur(1rem) contrast(40%) brightness(160%);
+  --text-font-size: 1.1rem;
+  --text-line-height: 1.5;
 }

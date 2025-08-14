@@ -26,6 +26,7 @@
 .c-mission__content {
   margin-block-end: 3rem;
   font-size: 1.3rem;
+  line-height: var(--text-line-height);
   text-align: left;
 
   > :last-child {

@@ -17,6 +17,7 @@
     block-size: var(--uc3-space-lg);
     inline-size: var(--uc3-space-lg);
     color: var(--uc3-color-dark-blue);
+    font-size: var(--text-font-size);
     text-decoration: none;
 
     &:focus,

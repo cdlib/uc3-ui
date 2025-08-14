@@ -1,6 +1,9 @@
 /* Search Result Component */
 
 .c-search-result {
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
+
   h2 {
     margin-block: unset;
     font-size: 1.3rem;

@@ -3,11 +3,16 @@
 .t-blog-post__content {
   padding-block: var(--uc3-space-base) var(--uc3-space-lg);
   padding-inline: var(--template-inline-content-padding);
+  font-size: var(--text-font-size);
 
   img {
     display: block;
     inline-size: 100%;
     margin-block-end: var(--uc3-space-base);
     background-color: gray;
+  }
+
+  > :not(.c-post-header) {
+    line-height: var(--text-line-height);
   }
 }
