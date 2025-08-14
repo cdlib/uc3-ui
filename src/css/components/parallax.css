@@ -1,7 +1,7 @@
 /* Parallax Component */
 
 .c-parallax {
-  --image-height: 50vw;
+  --image-height: 45vw;
 
   height: 100vh;
   perspective: 3.5px;
