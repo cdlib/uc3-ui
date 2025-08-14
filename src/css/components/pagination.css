@@ -5,6 +5,7 @@
     all: unset;
     display: flex;
     flex-wrap: wrap;
+    align-items: baseline; /* aligns ellipsis */
     justify-content: center;
     list-style-type: none;
   }
