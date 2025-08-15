@@ -1,9 +1,7 @@
 /* Header Component */
 
 .c-footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
   padding: var(--uc3-space-base) var(--uc3-space-lg);
   column-gap: var(--uc3-space-lg);
   background-color: var(--uc3-color-blue);
@@ -16,23 +14,47 @@
 
   h3 {
     font-size: 1rem;
-    font-weight: 400;
   }
 }
 
-.c-footer__main {
-  max-inline-size: 30rem;
+.c-footer__logos {
+  display: flex;
+  gap: var(--uc3-space-lg);
+
+  img {
+    block-size: 3rem;
+  }
 }
 
 .c-footer__more ul {
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: auto auto auto;
+  justify-content: start;
   gap: var(--uc3-space-sm) var(--uc3-space-base);
   padding: unset;
   list-style: none;
   
   a {
     color: currentcolor;
+  }
+}
+
+@media (width > 45rem) {
+  .c-footer {
+    grid-template-columns: auto auto;
+
+    h2 {
+      grid-column: 1 / 3;
+      grid-row: 1;
+    }
+
+    .c-footer__main {
+      grid-column: 1;
+    }
+
+    .c-footer__more {
+      grid-row: 1 / 4;
+    }
   }
 }
