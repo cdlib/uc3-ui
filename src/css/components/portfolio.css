@@ -10,11 +10,6 @@
     margin: unset;
   }
 
-  img {
-    inline-size: clamp(7rem, 22vw, 15rem);
-    justify-self: center;
-  }
-
   ul {
     display: contents;
   }
@@ -69,17 +64,15 @@
 
 @media (width > 54rem) {
   .c-portfolio {
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: auto;
 
     h2 {
-      grid-column: 2;
-      grid-row: 1;
+      grid-column: 1;
       text-align: center;
     }
 
     ul {
       display: flex;
-      grid-column: 1 / 4;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: var(--uc3-space-base);
