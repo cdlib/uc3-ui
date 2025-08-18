@@ -17,7 +17,7 @@
     content: '';
     inline-size: clamp(5rem, 14vw, 10rem);
     aspect-ratio: 1 / 1;
-    background: url('../images/cupped-hands.svg') center / contain no-repeat;
+    background: url('../images/uc3-star.svg') center / contain no-repeat;
   }
 
   &::after {
