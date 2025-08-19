@@ -1,14 +1,16 @@
 /* Mark Component */
 
 .c-mark {
-  --backdrop-spread: 0.5rem;
+  --backdrop-spread: var(--uc3-space-sm);
 
   display: grid;
   position: relative;
   grid-template-columns: auto auto;
   place-items: center;
-  gap: calc(var(--backdrop-spread) * 2);
-  margin-block: 0 calc(var(--backdrop-spread) * 2);
+  gap: calc(var(--backdrop-spread) + var(--uc3-space-base));
+  margin-block: unset;
+  padding-block: var(--backdrop-spread);
+  padding-inline: 0 var(--backdrop-spread);
   color: var(--uc3-color-dark-blue);
   font-size: clamp(1.8rem, 3.5vw, 2.1rem);
   font-variant: small-caps;
@@ -23,7 +25,8 @@
   &::after {
     content: '';
     position: absolute;
-    inset: 0 calc(var(--backdrop-spread) * -1);
+    inset-block: 0;
+    inset-inline: calc(var(--backdrop-spread) * -1) 0; 
     z-index: -1;
     grid-column: 2;
     backdrop-filter: var(--text-backdrop-filter);
@@ -33,12 +36,14 @@
 @media (width > 42rem) {
   .c-mark {
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
     max-inline-size: 25rem;
+    padding-block: 0 var(--backdrop-spread);
+    padding-inline: var(--backdrop-spread);
     text-align: center;
 
     &::after {
-      inset: calc(var(--backdrop-spread) * -1);
+      inset-block: calc(var(--backdrop-spread) * -1) 0;
+      inset-inline: calc(var(--backdrop-spread) * -1) 0;
       grid-column: 1;
       grid-row: 2;
     }
