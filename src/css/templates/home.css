@@ -28,7 +28,7 @@
   grid-template-rows: auto 1fr;
 
   .c-mark {
-    margin-inline: var(--uc3-space-lg);
+    margin: var(--uc3-space-lg);
     place-self: center;
   }
 }
