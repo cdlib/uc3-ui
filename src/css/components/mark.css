@@ -12,12 +12,12 @@
   padding-block: var(--backdrop-spread);
   padding-inline: 0 var(--backdrop-spread);
   color: var(--uc3-color-dark-blue);
-  font-size: clamp(1.8rem, 3.5vw, 2.1rem);
+  font-size: 1.6rem;
   font-variant: small-caps;
 
   &::before {
     content: '';
-    inline-size: clamp(5rem, 14vw, 10rem);
+    inline-size: 4rem;
     aspect-ratio: 1 / 1;
     background: url('../images/uc3-star.svg') center / contain no-repeat;
   }
@@ -40,6 +40,10 @@
     padding-block: 0 var(--backdrop-spread);
     padding-inline: var(--backdrop-spread);
     text-align: center;
+
+    &::before {
+      inline-size: clamp(5rem, 13vw, 10rem);
+    }
 
     &::after {
       inset-block: calc(var(--backdrop-spread) * -1) 0;
