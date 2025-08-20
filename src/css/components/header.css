@@ -1,13 +1,12 @@
 /* Header Component */
 
 .c-header {
-  --backdrop-spread: 2rem;
-
   display: grid;
   grid-template-columns: 5.1rem 1fr;
   align-items: start;
   padding: var(--uc3-space-lg);
   gap: var(--uc3-space-base);
+  backdrop-filter: var(--text-backdrop-filter);
 }
 
 .c-headernav {
