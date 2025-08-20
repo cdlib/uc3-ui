@@ -1,7 +1,14 @@
 /* Bios Template */
 
+.t-bios {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 .t-bios__content {
   display: grid;
+  align-content: start;
   gap: var(--uc3-space-lg);
   padding-block: var(--uc3-space-base) var(--uc3-space-lg);
   padding-inline: var(--template-inline-content-padding);

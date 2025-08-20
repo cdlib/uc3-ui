@@ -1,5 +1,11 @@
 /* Secondary Template */
 
+.t-secondary {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
 .t-secondary__image-1 {
   min-height: 30rem;
 }

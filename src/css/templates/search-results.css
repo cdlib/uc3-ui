@@ -1,6 +1,10 @@
 /* Search Results Template */
 
 .t-search-results {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+
   .c-breadcrumb {
     margin-inline: var(--uc3-space-lg);
   }
