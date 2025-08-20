@@ -1,0 +1,16 @@
+/* Plain Template */
+
+.t-plain {
+  header {
+    margin-block-end: var(--uc3-space-lg);
+  }
+
+  main {
+    padding-inline: var(--template-inline-content-padding);
+    font-size: var(--text-font-size);
+    
+    > :not(.c-breadcrumb, h1) {
+      line-height: var(--text-line-height);
+    }
+  }
+}

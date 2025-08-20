@@ -1,0 +1,11 @@
+{{#extend "base"}}{{#content "body"}}
+<div class="t-plain">
+  {{> header }}
+  <main id="maincontent">
+    {{> breadcrumb plain_breadcrumb }}
+    <h1>{{ plain.heading }}</h1>
+    <p>{{{ plain.paragraphs }}}</p>
+  </main>
+  {{> footer }}
+</div>
+{{/content}}{{/extend}}
