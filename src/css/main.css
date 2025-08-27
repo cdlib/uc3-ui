@@ -8,6 +8,10 @@
 /* Global Variables */
 
 :root {
+  /* Enables transition of width or height to max-content or auto: */
+
+  interpolate-size: allow-keywords;
+
   /* Spacing: */
 
   --uc3-space-base: 1rem;

@@ -2,19 +2,94 @@
 
 .c-search {
   display: flex;
+  justify-content: flex-end;
+
+  &:focus-within { /* #1 */
+    outline: 5px auto blue;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+}
+
+.c-search-form {
+  position-anchor: --my-anchor;
+  inset: auto;
+  right: anchor(left);
+  align-self: anchor-center;
+  width: 0; /* #2 */
+  height: anchor-size(height); /* #3 */
+  margin: 0;
+  margin-inline-end: var(--uc3-space-base);
+  padding: unset;
+  transition-property: opacity, display, width, overlay;
+  transition-duration: 0.3s;
+  transition-behavior: allow-discrete;
   border: 1px solid black;
+  opacity: 0; /* #2 */
 
   input {
-    flex: 1 1 auto;
     inline-size: 100%;
     padding: 0.3rem 0.6rem;
-    border: none;
+    border-style: none;
   }
 
   button {
     padding-inline: 0.8rem;
-    border: none;
+    border-style: none;
     background-color: black;
     color: white;
+
+    &:focus {
+      margin: 1px;
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &:popover-open {
+    display: flex;
+    width: 45vw;
+    opacity: 1;
+  
+    @starting-style {
+      width: 0;
+      opacity: 0;
+    }
   }
 }
+
+.c-search-toggle {
+  anchor-name: --my-anchor;
+  block-size: 1.9rem;
+  inline-size: 1.9rem;
+  padding: unset;
+  border-style: none;
+  background-color: var(--uc3-color-dark-blue);
+  mask: url('data-url:npm:fa-solid/magnifying-glass.svg') center / contain;
+}
+
+@media (width > 45rem) {
+  .c-search-form {
+    &:popover-open {
+      width: 35vw;
+
+      @starting-style { /* #4, 5 */
+        width: 0;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+/*
+#1: Search toggle loses it's focus ring with mask style, so reapply
+focus ring to the component container when toggle is focused.
+
+#2: Final state of the exit animation.
+
+#3: Set the popover height to that of the anchor (c-search-toggle).
+
+#4: Starting state for the animiation.
+
+#5: When using this media query, the starting styles before
+the query are reset for some reason, so duplicate them here.
+*/

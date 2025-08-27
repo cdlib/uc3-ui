@@ -7,6 +7,10 @@
   padding: var(--uc3-space-lg);
   gap: var(--uc3-space-base);
   backdrop-filter: var(--text-backdrop-filter);
+
+  .c-search {
+    justify-self: end;
+  }
 }
 
 .c-headernav {
@@ -18,11 +22,6 @@
     grid-template-columns: 15rem auto;
     grid-template-rows: 2.1rem auto;
     gap: var(--uc3-space-base) 4rem;
-
-    .c-search {
-      justify-self: end;
-      inline-size: 20rem;
-    }
   }
 
   .c-header__logo {

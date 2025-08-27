@@ -37,6 +37,7 @@
     "@faker-js/faker": "^9.3.0",
     "@fortawesome/fontawesome-pro": "^6.7.2",
     "@marcotss/parcel-transformer-handlebars-json": "^1.0.0",
+    "@oddbird/css-anchor-positioning": "^0.6.1",
     "@parcel/optimizer-data-url": "^2.15.2",
     "@parcel/resolver-glob": "^2.15.2",
     "@parcel/transformer-inline-string": "^2.15.2",
