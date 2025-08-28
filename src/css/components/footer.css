@@ -3,17 +3,23 @@
 .c-footer {
   display: grid;
   padding: var(--uc3-space-base) var(--uc3-space-lg);
-  column-gap: var(--uc3-space-lg);
+  gap: var(--uc3-space-base) var(--uc3-space-lg);
   background-color: var(--uc3-color-blue);
   color: white;
 
   h2 {
+    margin-block: unset;
     font-size: 1.1rem;
     font-weight: 600;
   }
 
   h3 {
+    margin-block-start: unset;
     font-size: 1rem;
+  }
+
+  p {
+    margin-block: unset;
   }
 }
 
