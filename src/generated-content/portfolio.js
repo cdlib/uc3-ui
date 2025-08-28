@@ -18,6 +18,5 @@ for (let i = 0; i < 5; i++) {
 }
 
 module.exports = {
-  heading: faker.lorem.sentence(10),
   listitems: list
 }
