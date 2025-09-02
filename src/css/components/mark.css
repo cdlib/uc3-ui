@@ -19,7 +19,7 @@
     content: '';
     inline-size: 4rem;
     aspect-ratio: 1 / 1;
-    background: url('../images/uc3-star.svg') center / contain no-repeat;
+    background: url('data-url:../images/uc3-star.svg') center / contain no-repeat;
   }
 
   &::after {
