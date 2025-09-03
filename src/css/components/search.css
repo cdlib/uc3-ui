@@ -67,6 +67,22 @@
   mask: url('data-url:npm:fa-solid/magnifying-glass.svg') center / contain;
 }
 
+/* If popover API isn't supported: */
+
+html.no-popover {
+  .c-search-form {
+    display: flex;
+    width: auto;
+    height: auto;
+    margin-inline-end: unset;
+    opacity: 1;
+  }
+
+  .c-search-toggle {
+    display: none;
+  }
+}
+
 @media (width > 45rem) {
   .c-search-form {
     &:popover-open {
