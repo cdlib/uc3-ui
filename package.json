@@ -10,7 +10,7 @@
     "prebuild": "del dist",
     "predeploy": "del dist",
     "parcel:dev": "parcel index.hbs --dist-dir dist",
-    "parcel:build": "parcel build src/css/main.css src/images/* src/js/main.js --dist-dir dist --no-source-maps --no-cache",
+    "parcel:build": "parcel build src/css/fonts.css src/css/main.css src/images/* src/js/main.js --dist-dir dist --no-source-maps --no-cache",
     "parcel:deploy": "parcel build index.hbs --dist-dir dist --public-url https://cdlib.github.io/uc3-ui --no-source-maps --no-cache",
     "watch:styles": "onchange -i 'src/css/**/*.css' -- npm run lint:styles",
     "watch:js": "onchange -i src/js/* -- npm run lint:js",
