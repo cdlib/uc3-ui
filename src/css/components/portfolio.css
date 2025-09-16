@@ -6,16 +6,6 @@
   gap: var(--uc3-space-lg);
   margin-block: unset;
   padding-inline: unset;
-
-  a {
-    color: black;
-    text-decoration: none;
-
-    &:focus,
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .c-portfolio li {
@@ -27,32 +17,44 @@
   font-variant: small-caps;
   text-align: center;
 
+  &:nth-child(1) {
+    --icon-url: url('data-url:../images/digital-preservation.svg');
+  }
+
+  &:nth-child(2) {
+    --icon-url: url('data-url:../images/data-publication.svg');
+  }
+
+  &:nth-child(3) {
+    --icon-url: url('data-url:../images/data-management.svg');
+  }
+
+  &:nth-child(4) {
+    --icon-url: url('data-url:../images/training.svg');
+  }
+
+  &:nth-child(5) {
+    --icon-url: url('data-url:../images/persistent-identifiers.svg');
+  }
+}
+
+.c-portfolio a {
+  display: flex;
+  flex-direction: column;
+  gap: var(--uc3-space-sm);
+  color: black;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+
   &::before {
     content: '';
     flex: none;
     block-size: 3.5rem;
-    inline-size: 3.5rem;
-    background: bottom center / contain no-repeat;
-  }
-
-  &:nth-child(1)::before {
-    background-image: url('data-url:../images/digital-preservation.svg');
-  }
-
-  &:nth-child(2)::before {
-    background-image: url('data-url:../images/data-publication.svg');
-  }
-
-  &:nth-child(3)::before {
-    background-image: url('data-url:../images/data-management.svg');
-  }
-
-  &:nth-child(4)::before {
-    background-image: url('data-url:../images/training.svg');
-  }
-
-  &:nth-child(5)::before {
-    background-image: url('data-url:../images/persistent-identifiers.svg');
+    background: var(--icon-url) center / contain no-repeat;
   }
 }
 
