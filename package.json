@@ -1,6 +1,6 @@
 {
   "name": "uc3-ui",
-  "version": "4.0.0",
+  "version": "4.1.0",
   "description": "The user interface for the UC3 website",
   "scripts": {
     "start": "run-p parcel:dev watch:styles watch:js --silent",
