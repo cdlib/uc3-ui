@@ -12,5 +12,7 @@ const anchorPositioningPolyfill = async () => {
 }
 
 if (!('anchorName' in document.documentElement.style)) {
-  anchorPositioningPolyfill()
+  if (process.env.NODE_ENV !== 'development') {
+    anchorPositioningPolyfill()
+  }
 }
