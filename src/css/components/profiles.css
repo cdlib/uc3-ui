@@ -1,6 +1,6 @@
-/* Orcid ID Component */
+/* Profiles Component */
 
-.c-orcid {
+.c-profiles-orcid {
   display: inline-flex;
   gap: 0.3rem;
   word-break: break-word;
@@ -9,6 +9,6 @@
     content: '';
     flex: none;
     inline-size: 1lh;
-    background: url('../images/orcid-logo.svg') top / contain no-repeat;
+    background: url('data-url:../images/orcid-logo.svg') top / contain no-repeat;
   }
 }

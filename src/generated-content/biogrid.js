@@ -18,8 +18,8 @@ for (let i = 0; i < 6; i++) {
       image: faker.image.urlPicsumPhotos({ width: 600, height: 400, grayscale: false, blur: 0 }),
       paragraphs: faker.person.jobTitle() + ', ' + faker.person.bio() + '. ' + faker.lorem.sentences(2)
     },
-    orcid: {
-      record: 'http://orcid.org/0000-0002' + '-' + numberGroup1 + '-' + numberGroup2
+    profile_link: {
+      orcid: 'http://orcid.org/0000-0002' + '-' + numberGroup1 + '-' + numberGroup2
     }
   })
 }
