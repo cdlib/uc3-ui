@@ -19,7 +19,10 @@ for (let i = 0; i < 6; i++) {
       paragraphs: faker.person.jobTitle() + ', ' + faker.person.bio() + '. ' + faker.lorem.sentences(2)
     },
     profile_link: {
-      orcid: 'http://orcid.org/0000-0002' + '-' + numberGroup1 + '-' + numberGroup2
+      orcid: 'http://orcid.org/0000-0002' + '-' + numberGroup1 + '-' + numberGroup2,
+      linkedin: faker.internet.url(),
+      github: faker.internet.url(),
+      other: faker.internet.url()
     }
   })
 }

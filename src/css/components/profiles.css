@@ -1,6 +1,9 @@
 /* Profiles Component */
 
-.c-profiles-orcid {
+.c-profiles-orcid,
+.c-profiles-linkedin,
+.c-profiles-github,
+.c-profiles-other {
   display: inline-flex;
   gap: 0.3rem;
   word-break: break-word;
@@ -9,6 +12,23 @@
     content: '';
     flex: none;
     inline-size: 1lh;
-    background: url('data-url:../images/orcid-logo.svg') top / contain no-repeat;
   }
+}
+
+.c-profiles-orcid::before {
+  background: url('data-url:../images/orcid-logo.svg') top / contain no-repeat;
+}
+
+.c-profiles-linkedin::before {
+  background-color: steelblue;
+  mask: url('data-url:npm:fa-brands/linkedin.svg') top / contain no-repeat;
+}
+
+.c-profiles-github::before {
+  background: url('data-url:npm:fa-brands/github.svg') top / contain no-repeat;
+}
+
+.c-profiles-other::before {
+  background-color: currentcolor;
+  mask: url('data-url:npm:fa-solid/globe.svg') top / contain no-repeat;
 }

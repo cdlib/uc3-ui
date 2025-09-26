@@ -6,6 +6,9 @@ const numberGroup2 = faker.number.int({ min: 1000, max: 9000 })
 
 module.exports = {
   profile_link: {
-    orcid: 'http://orcid.org/0000-0002' + '-' + numberGroup1 + '-' + numberGroup2
+    orcid: 'http://orcid.org/0000-0002' + '-' + numberGroup1 + '-' + numberGroup2,
+    linkedin: faker.internet.url(),
+    github: faker.internet.url(),
+    other: faker.internet.url()
   }
 }
