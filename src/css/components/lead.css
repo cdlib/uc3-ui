@@ -4,8 +4,11 @@
   color: var(--uc3-color-dark-blue);
 
   h1 {
+    display: inline-block;
     margin-block: unset;
     margin-block-end: var(--uc3-space-base);
+    padding: var(--uc3-space-sm) var(--uc3-space-base);
+    backdrop-filter: var(--text-backdrop-filter);
   }
 
   p {
