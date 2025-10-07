@@ -4,14 +4,15 @@
   min-height: 30rem;
 }
 
-.t-home__content-1,
-.t-home__content-2 {
+.t-home__content-1 {
   padding: var(--uc3-space-lg);
 }
 
 .t-home__content-2 {
   display: grid;
   gap: var(--uc3-space-lg);
+  padding-block-end: var(--uc3-space-lg);
+  padding-inline: var(--uc3-space-lg);
 
   .c-see-all {
     justify-self: end;
