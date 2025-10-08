@@ -2,7 +2,7 @@
 
 .t-blog-index {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: max-content 1fr auto;
   min-height: 100vh;
 }
 
@@ -16,7 +16,7 @@
 
   h1 {
     place-self: center start;
-    margin-inline: var(--uc3-space-base);
+    margin-inline: var(--uc3-space-lg);
     padding: var(--uc3-space-sm) var(--uc3-space-base);
   }
 }
