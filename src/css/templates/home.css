@@ -33,11 +33,3 @@
     place-self: center;
   }
 }
-
-@media (width > 54rem) {
-  .t-home__image-2 {
-    position: relative;
-    z-index: -1;
-    margin-block-start: -10rem;
-  }
-}
