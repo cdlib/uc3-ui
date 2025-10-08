@@ -2,7 +2,7 @@
 
 .t-secondary {
   display: grid;
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: max-content 1fr auto;
   min-height: 100vh;
 }
 
@@ -16,7 +16,7 @@
 
   .c-lead {
     align-self: center;
-    margin-block-end: var(--uc3-space-lg);
+    margin-block: var(--uc3-space-lg);
     margin-inline: var(--template-inline-content-padding);
   }
 }
