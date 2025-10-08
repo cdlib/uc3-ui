@@ -6,7 +6,6 @@
   h1 {
     display: inline-block;
     margin-block: unset;
-    margin-block-end: var(--uc3-space-base);
     padding: var(--uc3-space-sm) var(--uc3-space-base);
     backdrop-filter: var(--text-backdrop-filter);
   }
@@ -18,5 +17,9 @@
     font-size: 1.2rem;
     line-height: 1.5;
     backdrop-filter: blur(1rem);
+  }
+
+  h1 + p {
+    margin-block-start: var(--uc3-space-base);
   }
 }
