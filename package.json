@@ -1,6 +1,6 @@
 {
   "name": "uc3-ui",
-  "version": "4.1.0",
+  "version": "4.1.1",
   "description": "The user interface for the UC3 website",
   "scripts": {
     "start": "run-p parcel:dev watch:styles watch:js --silent",
@@ -30,8 +30,8 @@
   },
   "homepage": "https://github.com/cdlib/uc3-ui#readme",
   "engines": {
-    "node": "~22",
-    "npm": "~10"
+    "node": "~24",
+    "npm": "~11"
   },
   "devDependencies": {
     "@faker-js/faker": "^9.3.0",
